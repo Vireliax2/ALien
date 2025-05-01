@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Famous Landmarks on Earth</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #e0f7fa, #e0f2f1);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #00695c;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .landmark {
+      background-color: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      margin-bottom: 30px;
+    }
+
+    .landmark h2 {
+      color: #00695c;
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+    }
+
+    .landmark img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .landmark p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .home-button {
+      display: inline-block;
+      text-decoration: none;
+      background-color: #00695c;
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+      margin-top: 20px;
+    }
+
+    .home-button:hover {
+      background-color: #004d40;
+    }
+
+    footer {
+      background-color: #004d40;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .landmark {
+        padding: 20px;
+      }
+
+      .landmark img {
+        height: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Famous Landmarks Across the World</h1>
+  </header>
+
+  <main>
+    <div class="landmark">
+      <h2>Trevi Fountain — Rome, Italy</h2>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Trevi_Fountain_Rome_%28219199876%29.jpeg" alt="Trevi Fountain in Rome">
+      <p>
+        Rome's a city with no shortage of icons, but the Trevi Fountain is among the most timeless. With roots dating back to Roman engineering, this masterpiece represents their ability to tame water and decorate cities with awe-inspiring beauty.
+      </p>
+    </div>
+
+    <div class="landmark">
+      <h2>Eiffel Tower — Paris, France</h2>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Tour_Eiffel_Wikimedia_Commons.jpg" alt="Eiffel Tower in Paris">
+      <p>
+        The Eiffel Tower, or "La Dame de Fer," was built for the 1889 World Fair and has since become France's most recognizable icon. Once hated, now loved, it stands as a steel skeleton with a beating cultural heart.
+      </p>
+    </div>
+
+    <div class="landmark">
+      <h2>Great Wall of China — China</h2>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/10/20090529_Great_Wall_8185.jpg" alt="Great Wall of China">
+      <p>
+        Stretching over 13,000 miles, the Great Wall is less a wall and more a colossal flex of ancient Chinese determination. Dynasties built it to defend, control, and define borders—a legacy now preserved as a UNESCO marvel.
+      </p>
+    </div>
+
+    <div class="landmark">
+      <h2>Chichen Itza — Yucatan, Mexico</h2>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/94/Chichen_Itza_3.jpg" alt="Chichen Itza ruins in Mexico">
+      <p>
+        Chichen Itza stands as the crown jewel of Mayan genius. The Kukulkan Pyramid isn't just pretty—it's aligned with the equinoxes like some ancient architectural horoscope. Math, astronomy, and spiritual vibes? Mayans nailed it.
+      </p>
+    </div>
+
+    <div class="landmark">
+      <h2>Taj Mahal — Agra, India</h2>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Taj-Mahal.jpg" alt="Taj Mahal in Agra, India">
+      <p>
+        Built by Emperor Shah Jahan for his queen, the Taj Mahal is love set in white marble. Twenty-two years, 20,000 workers, and endless artistry went into creating this flawless mausoleum that continues to hypnotize visitors worldwide.
+      </p>
+    </div>
+
+    <a href="index.html" class="home-button">← Back to Home</a>
+  </main>
+
+  <footer>
+    <p>© 2025 Earth Visitor Guide. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Earth</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #e0f7fa, #e0f2f1);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #00695c;
+      color: #fff;
+      padding: 60px 20px 30px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .section {
+      background-color: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      margin-bottom: 30px;
+    }
+
+    .section h2 {
+      color: #00695c;
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .section p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .section img {
+      width: 100%;
+      height: auto;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin: 20px 0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .fact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .fact-card {
+      background-color: #f5f5f5;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .fact-card h3 {
+      color: #00695c;
+      margin-bottom: 10px;
+    }
+
+    .home-button {
+      display: inline-block;
+      text-decoration: none;
+      background-color: #00695c;
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+      margin-top: 20px;
+      font-size: 1rem;
+    }
+
+    .home-button:hover {
+      background-color: #004d40;
+    }
+
+    footer {
+      background-color: #004d40;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .section {
+        padding: 20px;
+      }
+
+      .fact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Discover Earth</h1>
+    <p>Your comprehensive guide to our amazing planet</p>
+  </header>
+
+  <main>
+    <div class="section">
+      <h2>🌍 Earth's Formation</h2>
+      <p>
+        Earth formed approximately 4.54 billion years ago through accretion from the solar nebula. Volcanic outgassing created the primordial atmosphere, and water vapor condensed into oceans. The Moon formed soon afterward, possibly as the result of a Mars-sized body (Theia) colliding with Earth.
+      </p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg" alt="Earth from space">
+    </div>
+
+    <div class="section">
+      <h2>🌎 Planetary Characteristics</h2>
+      <p>
+        Earth is the third planet from the Sun and the only known astronomical object to harbor life. About 29% of Earth's surface is land consisting of continents and islands, while the remaining 71% is covered by water, mostly by oceans but also lakes, rivers and other fresh water.
+      </p>
+      <div class="fact-grid">
+        <div class="fact-card">
+          <h3>Diameter</h3>
+          <p>12,742 km</p>
+        </div>
+        <div class="fact-card">
+          <h3>Mass</h3>
+          <p>5.97 × 10²⁴ kg</p>
+        </div>
+        <div class="fact-card">
+          <h3>Surface Area</h3>
+          <p>510 million km²</p>
+        </div>
+        <div class="fact-card">
+          <h3>Orbital Period</h3>
+          <p>365.25 days</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>🌏 Earth's Structure</h2>
+      <p>
+        Earth's interior is divided into layers: the solid inner core, liquid outer core, viscous mantle, and solid crust. The crust and upper mantle form lithospheric plates that move relative to each other, causing continental drift, earthquakes, and volcanic activity.
+      </p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Earth_poster.svg" alt="Earth's structure">
+    </div>
+
+    <div class="section">
+      <h2>🌍 Climate and Weather</h2>
+      <p>
+        Earth's climate varies from tropical at the equator to polar at the poles. Weather systems are driven by solar energy, Earth's rotation, and atmospheric circulation. The greenhouse effect maintains Earth's average temperature at about 15°C (59°F), making it habitable.
+      </p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Climate_Zones.png" alt="Earth climate zones">
+    </div>
+
+    <div class="section">
+      <h2>🌎 Life on Earth</h2>
+      <p>
+        Earth is the only known planet with life. About 8.7 million species exist, though only about 1.9 million have been identified. Life first appeared about 3.8 billion years ago and has evolved through natural selection into the incredible biodiversity we see today.
+      </p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Ecosystem_Composition.jpg" alt="Earth's ecosystems">
+    </div>
+
+    <div class="section">
+      <h2>🌏 Human Civilization</h2>
+      <p>
+        Modern humans emerged about 300,000 years ago in Africa. Agriculture began about 12,000 years ago, leading to settled societies. Today, Earth is home to nearly 8 billion people in about 200 nations, with diverse cultures, languages, and political systems.
+      </p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/World_Map_of_Languages.svg" alt="World languages">
+    </div>
+
+    <div class="section">
+      <h2>🌍 Future of Earth</h2>
+      <p>
+        Earth's future depends on both natural processes and human activity. In about 1 billion years, the Sun's increasing luminosity will make Earth too hot for liquid water. Before then, human-caused climate change and environmental degradation pose significant challenges to civilization.
+      </p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/Artist%27s_impression_of_the_Earth_in_the_far_future.jpg" alt="Future Earth">
+    </div>
+
+    <div style="text-align: center;">
+      <a href="index.html" class="home-button">← Back to Home</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Earth Visitor Guide. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

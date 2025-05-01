@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Application Form</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #e0f7fa, #e0f2f1);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #00695c;
+      color: #fff;
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    header h1, header h3 {
+      margin: 5px 0;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .form-container {
+      background-color: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+      width: 100%;
+      max-width: 600px;
+    }
+
+    .form-container h1 {
+      color: #00695c;
+      font-size: 2rem;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    textarea {
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      font-size: 1rem;
+      resize: vertical;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    textarea::placeholder {
+      color: #999;
+    }
+
+    button {
+      background-color: #00695c;
+      color: #fff;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      align-self: center;
+    }
+
+    button:hover {
+      background-color: #004d40;
+    }
+
+    .home-button {
+      display: inline-block;
+      text-decoration: none;
+      background-color: #00695c;
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+      margin-top: 30px;
+    }
+
+    .home-button:hover {
+      background-color: #004d40;
+    }
+
+    footer {
+      background-color: #004d40;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .form-container {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>For contact:-</h1>
+    <h3>921478124</h3>
+    <h3>VisitEarth@gmail.com</h3>
+  </header>
+
+  <main>
+    <div class="form-container">
+      <h1>Application Form</h1>
+      <form>
+        <textarea placeholder="Name*" rows="1" required></textarea>
+        <textarea placeholder="Email*" rows="1" required></textarea>
+        <textarea placeholder="Reason for visit, personal details, number of aliens and their ages*" rows="5" required></textarea>
+        <button type="submit">Send Application</button>
+      </form>
+    </div>
+
+    <a href="index.html" class="home-button">← Back to Home</a>
+  </main>
+
+  <footer>
+    <p>© 2025 Earth Visitor Guide. All rights reserved.</p>
+  </footer>
+</body>
+</html>

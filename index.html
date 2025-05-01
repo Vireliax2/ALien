@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome to Earth</title>
+  <style>
+    /* Reset and Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #e0f7fa, #e0f2f1);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Header */
+    header {
+      background-color: #00695c;
+      color: #fff;
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header img {
+      height: 60px;
+      border-radius: 50%;
+    }
+
+    header h1 {
+      font-size: 2rem;
+    }
+
+    /* Main Content */
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      overflow: hidden;
+      transition: transform 0.3s;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .card-content h2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: #00695c;
+    }
+
+    .card-content p {
+      flex: 1;
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+
+    .card-content a {
+      align-self: flex-start;
+      text-decoration: none;
+      background-color: #00695c;
+      color: #fff;
+      padding: 10px 15px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .card-content a:hover {
+      background-color: #004d40;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #004d40;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      header h1 {
+        margin-top: 10px;
+      }
+
+      main {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?auto=format&fit=crop&w=60&h=60&q=80" alt="Earth Logo">
+    <h1>Welcome to Earth</h1>
+  </header>
+
+  <main>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Rules">
+      <div class="card-content">
+        <h2>Rules</h2>
+        <p>All interstellar visitors are subject to these regulations. Entry to Earth implies full understanding and compliance. Violators will be detained without exception.</p>
+        <a href="rules.html">Read More</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80" alt="Famous Places">
+      <div class="card-content">
+        <h2>Famous Places</h2>
+        <p>Earth is home to some of the most iconic locations in the universe—natural wonders, ancient ruins, modern marvels. These are the places worth seeing.</p>
+        <a href="places.html">Explore</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?auto=format&fit=crop&w=800&q=80" alt="Apply Here">
+      <div class="card-content">
+        <h2>Apply Here</h2>
+        <p>Your ultimate guide to exploring famous places across the globe. Easily discover, learn about, and plan visits to iconic destinations—all from the convenience of your device.</p>
+        <a href="application.html">Apply Now</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=800&q=80" alt="About Earth">
+      <div class="card-content">
+        <h2>About Earth</h2>
+        <p>Curious about Earth? Find out where it is, its history, and what makes it unique in the universe.</p>
+        <a href="about_earth.html">Learn More</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Earth Visitor Guide. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
